@@ -1,8 +1,7 @@
 export const HEADER_LINKS = [
-    { name: 'Home', link: '/' },
-    { name: 'About Me', link: '/' },
     { name: 'Projects', link: '/' },
-    { name: 'Work Experience', link: '/' },
+    { name: 'About', link: '/' },
+    { name: 'Experience', link: '/' },
     { name: 'Skills', link: '/' },
 ]
 
@@ -14,6 +13,9 @@ export const INTRODUCTION = `
 `
 
 export const MY_PROJECTS = [
+    { name: 'my_qa', img: 'logo.png', link: '', keywords: ['Java', 'Spring', 'Vue', 'ElementUI', 'PostgreSQL'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },
+    { name: 'Outdoor Club', img: 'logo.png', link: '', keywords: ['Php', 'Bootstrap', 'MySQL', 'HTML'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },
+    { name: 'Merge Cats', img: 'logo.png', link: '', keywords: ['Unity', 'C++'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },
     { name: 'my_qa', img: 'logo.png', link: '', keywords: ['Java', 'Spring', 'Vue', 'ElementUI', 'PostgreSQL'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },
     { name: 'Outdoor Club', img: 'logo.png', link: '', keywords: ['Php', 'Bootstrap', 'MySQL', 'HTML'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },
     { name: 'Merge Cats', img: 'logo.png', link: '', keywords: ['Unity', 'C++'], desc: 'Projects completed independently by myself, Front-end and back-end separation mode, it is a platform to assist me in learning programming.' },

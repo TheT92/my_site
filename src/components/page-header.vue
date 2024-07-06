@@ -9,7 +9,7 @@
       >
         <router-link
           :to="item.link"
-          class="text-decoration-none text-black p-2"
+          class="text-decoration-none text-white pl-8 pr-0"
           >{{ item.name }}</router-link
         >
       </li>

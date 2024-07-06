@@ -1,51 +1,53 @@
 .home {
-    background-color: #fff;
+    position: relative;
+    background-color: #000;
+
     .banner {
-        position: relative;
-        width: 100%;
-        min-height: 300px;
-        padding-top: 56.25%;
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        right: -20px;
+        height: 66.66vw;
         background: url('@/assets/banner.jpg') 50% no-repeat;
         background-size: cover;
+        z-index: 1;
+    }
+
+    .page-head {
+        position: relative;
+        margin-top: 16vh;
+        margin-bottom: 20vh;
+        color: #fff;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        box-shadow: 0 0 6px 1px #333;
-        .banner-content {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            color: #fff;
-            background-color: #00000050;
-        }
-        .avatar {
-            width: 10vw;
-            height: 10vw;
-            min-width: 80px;
-            min-height: 80px;
-            border-radius: 50%;
-            box-shadow: 0 0 1px 2px #fff;
-            background: url('@/assets/logo.png') 50% no-repeat;
-            background-size: cover;
-            background-color: #1890ff;
-        }
+        z-index: 2;
     }
+
     .content-card {
-        padding: 1rem;
+        position: relative;
+        color: #fff;
         margin-bottom: 1rem;
-        border-radius: 16px;
-        background: #fff;
-        border: 4px solid #000;
+        z-index: 2;
     }
-    .intro {
-        border-top: none;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-    }
+
     .project-item {
         display: inline-block;
-        width: 33.33%;
+        width: 32%;
+        border-radius: 8px;
+        border: 2px solid #ffffff66;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: #ffffff12;
+
+        &:nth-child(3n+2) {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        .tags {
+            height: 80px;
+        }
+
         .cover-img {
             padding-top: 56.25%;
             width: 100%;
@@ -54,15 +56,33 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+
         .keyword {
             display: inline-block;
-            padding: 0.25rem 0.5rem;
+            padding: 4px 8px;
             color: #fff;
             border-radius: 4px;
             background-color: #1890ff;
-            margin-bottom: 0.25rem;
-            margin-right: 0.5rem; 
+            margin-bottom: 10px;
+            margin-right: 10px;
+            box-shadow: 0 0 1px 1px #ffffff64;
         }
     }
 
+    .about {
+        .photo {
+            margin-right: 2%;
+            width: 32%;
+            padding-top: 45%;
+            background: url('@/assets/banner.jpg') 50% no-repeat;
+            background-size: cover;
+        }
+        .about-text {
+            border-radius: 8px;
+            border: 2px solid #ffffff66;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            background: #ffffff12;
+        }
+    }
 }
